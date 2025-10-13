@@ -19,6 +19,7 @@ import Buenaspracticas from "./views/protected/Buenaspracticas";
 import Evar from "./views/protected/asistencia/Evar";
 import Otros from "./views/protected/asistencia/Otros";
 import EmbebidoLayout from "./components/EmbebidoLayout";
+import PlanificacionSoloTablas from "./views/protected/asistencia/PlanificacionSoloTabla"
 
 // ⚠️ Planificación por lazy import con RUTA RELATIVA (no "src/..."):
 const Planificacion = lazy(() => import("./views/protected/asistencia/Planificacion"));
@@ -102,6 +103,10 @@ const router = createBrowserRouter([
             {
                 path: "/tablero/evar/pi",
                 element: <Evar />,
+            },
+            {
+                path: "/tablero/planificacion-instrumentos/pi",
+                element: <PlanificacionSoloTablas />
             },
         ],
     },
