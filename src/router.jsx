@@ -21,6 +21,8 @@ import Otros from "./views/protected/asistencia/Otros";
 import EmbebidoLayout from "./components/EmbebidoLayout";
 import PlanificacionSoloTablas from "./views/protected/asistencia/PlanificacionSoloTabla"
 import FeaturePprrdRa from './features/asistencia/pprrdra/index';
+import FeatureFasesPprd from './features/asistencia/entidadesasistidas/index';
+import FeatureEntidadesAsistidas from './features/asistencia/fasespprd/index';
 
 // ⚠️ Planificación por lazy import con RUTA RELATIVA (no "src/..."):
 const Planificacion = lazy(() => import("./views/protected/asistencia/Planificacion"));
@@ -88,6 +90,14 @@ const router = createBrowserRouter([
             {
                 path: '/tablero/pprrd/pi',
                 element: <Pprrd />
+            },
+            {
+                path: '/tablero/entidadesasistidas/pi',
+                element: <FeatureEntidadesAsistidas />
+            },
+            {
+                path: '/tablero/fasespprd/pi',
+                element: <FeatureFasesPprd />
             },
             {
                 path: "/tablero/otros/pi",
