@@ -23,6 +23,7 @@ import PlanificacionSoloTablas from "./views/protected/asistencia/PlanificacionS
 import FeaturePprrdRa from './features/asistencia/pprrdra/index';
 import FeatureFasesPprd from './features/asistencia/entidadesasistidas/index';
 import FeatureEntidadesAsistidas from './features/asistencia/fasespprd/index';
+import FeaturePlanificacionParaAsistencia from './features/asistencia/planificacion-para-instrumentos/index';
 
 // ⚠️ Planificación por lazy import con RUTA RELATIVA (no "src/..."):
 const Planificacion = lazy(() => import("./views/protected/asistencia/Planificacion"));
@@ -118,6 +119,10 @@ const router = createBrowserRouter([
             {
                 path: "/tablero/evar/pi",
                 element: <Evar />,
+            },
+            {
+                path: "/tablero/planificacion/pi",
+                element: <FeaturePlanificacionParaAsistencia />
             },
             {
                 path: "/tablero/planificacion-instrumentos/pi",

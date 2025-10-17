@@ -86,7 +86,8 @@ const Index = () => {
           <h1 className="text-4xl font-bold"> Dashboard </h1>
         </div> */}
                     <p className="text-3xl font-bold mb-8">
-                        OTRAS ASISTENCIAS TÉCNICAS Y ACTIVIDADES DE REPRESENTACIÓN {(nombreDep) ? '- REGIÓN ' + nombreDep : ' - NIVEL NACIONAL'}</p>
+                        PLAN DE EDUCACIÓN COMUNITARIA - PLAN DE REASENTAMIENTO POBLACIONAL - ACTIVIDADES DE REPRESENTACIÓN {(nombreDep) ? '- REGIÓN ' + nombreDep : ' - NIVEL NACIONAL'}</p>
+
 
                     <div className="flex flex-col lg:flex-row">
 
